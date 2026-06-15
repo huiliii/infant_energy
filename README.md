@@ -8,8 +8,7 @@ infants from the Developing Human Connectome Project (dHCP).
 The pipeline:
 
 1. Estimates per-subject regional control energy from individual
-   structural connectomes (linear continuous-time optimal control,
-   zero baseline → all-ones target state).
+   structural connectomes (linear continuous-time optimal control).
 2. Computes per-subject regional ALFF from preprocessed resting-state
    fMRI time series.
 3. Tests how the spatial coupling between control energy and ALFF
