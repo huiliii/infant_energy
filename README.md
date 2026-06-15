@@ -26,8 +26,8 @@ The pipeline:
 ├── code/
 │   ├── config.m                       # set local paths once, here
 │   ├── s01_compute_ce_alff.m          # CE + ALFF per subject + group corr
-│   ├──fig2_ce_alff_coupling.m    # Fig. 2 analyses
-│   ├──fig5_cmrglc_alignment.m    # Fig. 5 analyses
+│   ├── s02_ce_alff_coupling.m    # Fig. 2 analyses
+│   ├── s03_cmrglc_alignment.m    # Fig. 5 analyses
 │   ├── s04_transcriptomic_analysis.m  # Fig. 4 (BrainSpan + AHBA)
 │   └── helpers/
 │       ├── compute_subject_ce_alff.m  # CE + ALFF for one subject
