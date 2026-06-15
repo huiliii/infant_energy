@@ -64,8 +64,8 @@ scripts depend on `.mat` files produced by upstream ones.
 
    ```matlab
    run s01_compute_ce_alff.m         % builds dhcp_*_ce_alff.mat
-   run s02_fig2_ce_alff_coupling.m   % Fig. 2 statistics
-   run s03_fig5_cmrglc_alignment.m   % Fig. 5 statistics
+   run s02_ce_alff_coupling.m   % Fig. 2 statistics
+   run s03_cmrglc_alignment.m   % Fig. 5 statistics
    run s04_transcriptomic_analysis.m % Fig. 4 statistics
    ```
 
@@ -92,8 +92,8 @@ layout. Briefly, you will need:
 | Step | Script | Outputs |
 | ---- | ------ | ------- |
 | 1 | `s01_compute_ce_alff.m` | `dhcp_fet_ce_alff.mat`, `dhcp_neo_ce_alff.mat`, `group_corr.mat` |
-| 2 | `s02_fig2_ce_alff_coupling.m` | whole-brain CE ~ age, cross-cohort CE/ALFF spatial similarity, group differences in r(CE, ALFF), r(CE, ALFF) ~ age (with and without motion/sex covariates) |
-| 3 | `s03_fig5_cmrglc_alignment.m` | per-subject r(CE, adult CMRglc), r ~ age |
+| 2 | `s02_ce_alff_coupling.m` | whole-brain CE ~ age, cross-cohort CE/ALFF spatial similarity, group differences in r(CE, ALFF), r(CE, ALFF) ~ age (with and without motion/sex covariates) |
+| 3 | `s03_cmrglc_alignment.m` | per-subject r(CE, adult CMRglc), r ~ age |
 | 4 | `s04_transcriptomic_analysis.m` | BrainSpan gene-set tests, AHBA per-gene t-tests, ranked gene lists |
 
 ## Notes on the implementation
@@ -112,14 +112,7 @@ layout. Briefly, you will need:
 
 ## Citation
 
-If you use this code, please cite the accompanying manuscript (in
-preparation). Cite the NCT framework via Gu et al. 2015 (Nature
-Communications) and the original toolbox, and cite the dHCP
-(Edwards et al.), BrainSpan (Kang et al. 2011), AHBA (Hawrylycz et
-al. 2012), and Shokri-Kojori et al. 2019 for the corresponding
-datasets.
 
 ## License
 
-Choose a license before pushing the public repository (MIT and BSD-3
-are common for research code). Until then, all rights reserved.
+All rights reserved.
